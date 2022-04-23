@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+<style>
+.search-layer {
+  top: 65px;
+  left: .5em;
+}
+.ol-touch .search-layer {
+  top: 80px;
+}
+</style>
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control button {
+            background-color: #f8f8f8 !important;
+            color: #000000 !important;
+            border-radius: 0px !important;
+        }
+        .ol-zoom, .geolocate, .gcd-gl-control .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 3px !important;
+        }
+        .ol-scale-line {
+            background: none !important;
+        }
+        .ol-scale-line-inner {
+            border: 2px solid #f8f8f8 !important;
+            border-top: none !important;
+            background: rgba(255, 255, 255, 0.5) !important;
+            color: black !important;
+        }
+        </style>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/MO_structure_0.js"></script><script src="layers/highway_motorway_highway_motorway_link_3.js"></script><script src="layers/EPO_indep_mo_streets_reduced_EPSG2817NAD83HARNMissouriWest_4.js"></script><script src="layers/waterway_5.js"></script><script src="layers/waterway_6.js"></script><script src="layers/EPO_indep_mo_waterway_EPSG2817NAD83HARNMissouriWest_7.js"></script><script src="layers/waterway_river_8.js"></script><script src="layers/EPO_indep_mo_waterway_river_EPSG2817NAD83HARNMissouriWest_9.js"></script><script src="layers/waterway_stream_10.js"></script><script src="layers/waterway_stream_11.js"></script><script src="layers/EPO_indep_mo_waterway_stream_EPSG2817NAD83HARNMissouriWest_12.js"></script><script src="layers/natural_tree_13.js"></script><script src="layers/natural_tree_row_14.js"></script><script src="layers/natural_tree_15.js"></script><script src="layers/leisure_common_leisure_park_16.js"></script><script src="layers/leisure_park_17.js"></script><script src="layers/leisure_nature_reserve_18.js"></script><script src="layers/leisure_park_19.js"></script><script src="layers/leisure_playground_20.js"></script><script src="layers/natural_tree_21.js"></script><script src="layers/amenity_restaurant_22.js"></script><script src="layers/recycling_type_centre_23.js"></script><script src="layers/addrstreet_24.js"></script><script src="layers/building_industrial_25.js"></script><script src="layers/EPO_indep_mo_building_industrial_EPSG2817NAD83HARNMissouriWest_26.js"></script><script src="layers/bridge_27.js"></script><script src="layers/building_house_amenity_house_28.js"></script><script src="layers/Corner_Stone_29.js"></script><script src="layers/Corner_Stone_30.js"></script><script src="layers/Agriculture_31.js"></script><script src="layers/Temple_Buildings_32.js"></script><script src="layers/Villa_Blocks_33.js"></script><script src="layers/Atherton_Farms_Limit_34.js"></script>
+        <script src="styles/MO_structure_0_style.js"></script><script src="styles/highway_motorway_highway_motorway_link_3_style.js"></script><script src="styles/EPO_indep_mo_streets_reduced_EPSG2817NAD83HARNMissouriWest_4_style.js"></script><script src="styles/waterway_5_style.js"></script><script src="styles/waterway_6_style.js"></script><script src="styles/EPO_indep_mo_waterway_EPSG2817NAD83HARNMissouriWest_7_style.js"></script><script src="styles/waterway_river_8_style.js"></script><script src="styles/EPO_indep_mo_waterway_river_EPSG2817NAD83HARNMissouriWest_9_style.js"></script><script src="styles/waterway_stream_10_style.js"></script><script src="styles/waterway_stream_11_style.js"></script><script src="styles/EPO_indep_mo_waterway_stream_EPSG2817NAD83HARNMissouriWest_12_style.js"></script><script src="styles/natural_tree_13_style.js"></script><script src="styles/natural_tree_row_14_style.js"></script><script src="styles/natural_tree_15_style.js"></script><script src="styles/leisure_common_leisure_park_16_style.js"></script><script src="styles/leisure_park_17_style.js"></script><script src="styles/leisure_nature_reserve_18_style.js"></script><script src="styles/leisure_park_19_style.js"></script><script src="styles/leisure_playground_20_style.js"></script><script src="styles/natural_tree_21_style.js"></script><script src="styles/amenity_restaurant_22_style.js"></script><script src="styles/recycling_type_centre_23_style.js"></script><script src="styles/addrstreet_24_style.js"></script><script src="styles/building_industrial_25_style.js"></script><script src="styles/EPO_indep_mo_building_industrial_EPSG2817NAD83HARNMissouriWest_26_style.js"></script><script src="styles/bridge_27_style.js"></script><script src="styles/building_house_amenity_house_28_style.js"></script><script src="styles/Corner_Stone_29_style.js"></script><script src="styles/Corner_Stone_30_style.js"></script><script src="styles/Agriculture_31_style.js"></script><script src="styles/Temple_Buildings_32_style.js"></script><script src="styles/Villa_Blocks_33_style.js"></script><script src="styles/Atherton_Farms_Limit_34_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>

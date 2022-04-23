@@ -1,0 +1,1 @@
+var json_Corner_Stone_29 = {"type":"FeatureCollection","name":"Corner_Stone_29","crs":{"type":"name","properties":{"name":"urn:ogc:def:crs:OGC:1.3:CRS84"}},"features":[{"type":"Feature","properties":{"id":"0"},"geometry":{"type":"Point","coordinates":[-94.427998974685821,39.090951346399599]}}]}
